@@ -1,8 +1,10 @@
 import React, { useState, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../../stylesheets/Owner/OwnerForm.css';  // Adjusted path for OwnerForm.css
 import logo from '../../assets/images/logo.png';  // Adjusted path for logo.png
 
 const OwnerForm = () => {
+  const navigate = useNavigate();
   const [page, setPage] = useState(1);
   const [ownerName, setOwnerName] = useState('');
   const [contactNumber, setContactNumber] = useState('');
@@ -97,7 +99,7 @@ const OwnerForm = () => {
 
   return (
     <div className="owner-form">
-      <header className="header">
+      <header className="headerForm">
         <img src={logo} alt="Logo" className="logo" />
       </header>
 
@@ -315,7 +317,7 @@ const OwnerForm = () => {
             <button className="back-button" onClick={handleBack}>
               Back
             </button>
-            <button className="submit-button" onClick={() => console.log('Submitted!')}>
+            <button className="submit-button" onClick={() => navigate('/owner_Profile')}>
               Submit
             </button>
           </div>

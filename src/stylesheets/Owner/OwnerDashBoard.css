@@ -1,0 +1,67 @@
+/* OwnerDashBoard.css */
+.dashboard-container {
+    padding: 30px;
+    background-color: #f4f4f4;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: 20px;
+    background: linear-gradient(90deg, #000000, #db3434);
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-header h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+  }
+  
+  .dashboard-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+  }
+  
+  .dashboard-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dashboard-card h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+  }
+  
+  .dashboard-card p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .dashboard-card .status {
+    font-weight: 500;
+    color: #db3434;
+  }
+  
+  .dashboard-actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
